@@ -1,5 +1,8 @@
+import { injectable, InjectionToken } from "tsyringe";
+
+@injectable()
 export class Database {
-  constructor() {}
+  constructor() { }
 
   // Mock method
   // In a real project, this would for instance connect to a database and send a query

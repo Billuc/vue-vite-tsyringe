@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
-import rollupTypescript from '@rollup/plugin-typescript';
-import vue from '@vitejs/plugin-vue';
+import rollupTypescript from "@rollup/plugin-typescript";
+import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({

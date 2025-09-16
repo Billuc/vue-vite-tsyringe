@@ -1,5 +1,5 @@
-import { DependencyContainer, InjectionToken } from 'tsyringe';
-import { inject } from 'vue';
+import { DependencyContainer, InjectionToken } from "tsyringe";
+import { inject } from "vue";
 
 export const useService = <T>(token: InjectionToken<T>): T => {
   // This returns the container provided in the plugin
@@ -7,7 +7,7 @@ export const useService = <T>(token: InjectionToken<T>): T => {
 
   if (!myContainer)
     throw Error(
-      "DependencyContainer not available ! Are you using the DI plugin ?"
+      "DependencyContainer not available ! Are you using the DI plugin ?",
     );
 
   return myContainer.resolve(token);

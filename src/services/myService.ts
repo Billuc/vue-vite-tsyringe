@@ -1,10 +1,9 @@
-import { injectable } from 'tsyringe';
-
-import { Database } from './database';
+import { injectable, InjectionToken, inject } from "tsyringe";
+import { Database } from "./database";
 
 @injectable()
 export class MyService {
-  constructor(private database: Database) {}
+  constructor(@inject(Database) private database: Database) { }
 
   get() {
     return this.database.doQuery();

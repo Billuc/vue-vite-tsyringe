@@ -1,8 +1,8 @@
-import { container } from 'tsyringe';
-import { Plugin } from 'vue';
+import { container } from "tsyringe";
+import { Plugin } from "vue";
 
-import { Database } from '../services/database';
-import { MyService } from '../services/myService';
+import { Database } from "../services/database";
+import { MyService } from "../services/myService";
 
 const containerPlugin: Plugin = (app) => {
   // This not necessary, container is already the default container provided by tsyringe and can be used directly
